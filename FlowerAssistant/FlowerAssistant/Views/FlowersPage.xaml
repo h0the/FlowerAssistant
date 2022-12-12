@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:FlowerAssistant.Controls"
+             x:Class="FlowerAssistant.Views.FlowersPage"
+             Title="Мой цветок">
+
+    <StackLayout Margin="20,35,20,20">
+        <controls:HeadingLabel x:Name="namfl" Text="Орхидея" />
+
+        <Image x:Name="img" 
+               VerticalOptions="Center" 
+               HorizontalOptions="Center"
+               WidthRequest="300"
+               HeightRequest="300">
+
+        </Image>
+
+        <Button Text="Сделать напоминание о поливе"
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Clicked="OnScheduleClick" />
+
+    </StackLayout>
+    
+</ContentPage>
